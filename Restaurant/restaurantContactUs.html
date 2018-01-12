@@ -6,15 +6,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 		<title>Julie B's: Contact Us</title>
+		
+		<!-- BOOTSTRAP FILES -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+		</script>
+		
+<!-- Style -->
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+		td {
+			text-align: left;
+			padding: 3px;
+		}
+		.myLabel {
+			text-align: right;
+			font-weight: bold;
+		}
+		table {
+			margin: auto;
+		}
+		#main {
+			background-color:#F1EFE6;	/* skin by miho - colourlovers.com */
+		}
+		</style>
 	</head>
 	<body>
 <!-- Heading -->
+	   <div id="heading">
 		<h1>Julie B's</h1>
-	
+	   </div>
+	   
 <!-- Navigation -->
 		<hr />
-		<a href="restaurantIndex.html">Home</a>
-		<a href="restaurantMenu.html">Menu</a>
+		<a href="restaurantIndex.html">Home</a>&nbsp;&nbsp;&nbsp;
+		<a href="restaurantMenu.html">Menu</a>&nbsp;&nbsp;&nbsp;
 		<a href="restaurantContactUs.html">Contact Us</a>
 		<hr />
 	
@@ -22,19 +49,19 @@
 		<form>
 			<table>
 				<tr>
-					<td>Name:</td>
+					<td class="myLabel">Name:</td>
 					<td><input type="text" required /></td>
 				</tr>
 				<tr>
-					<td>Email: </td>
+					<td class="myLabel">Email: </td>
 					<td><input type="text" required /></td>
 				</tr>
 				<tr>
-					<td>Phone: </td>
+					<td class="myLabel">Phone: </td>
 					<td><input type="text" required /></td>
 				</tr>
 				<tr>
-					<td>Reason for Inquiry: </td>
+					<td class="myLabel">Reason for Inquiry: </td>
 					<td>
 						<select name="reason">
 							<option value="catering" selected>Catering</option>
@@ -45,17 +72,17 @@
 					<td>
 				</tr>
 				<tr>
-					<td>Additional Information:</td>
+					<td class="myLabel">Additional Information:</td>
 					<td> <textarea name="additionalInfo"></textarea></td>
 				</tr>
 				<tr>
-					<td>Have you been tot he restaurant?</td>
+					<td class="myLabel">Have you been tot he restaurant?</td>
 					<td> 
 						<input type="radio" name="haveBeen" value="No" checked/>No
 						<input type="radio" name="haveBeen" value="Yes"/>Yes</td>
 				</tr>
 				<tr>
-					<td>Best days to contact you: </td>
+					<td class="myLabel">Best days to contact you: </td>
 					<td>
 						<input type="checkbox" name="days" value="m"/>M
 						<input type="checkbox" name="days" value="tu" />Tu
