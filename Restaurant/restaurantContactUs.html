@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <!-- Required meta tags.  allows for mobile responsiveness -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<title>Julie B's: Contact Us</title>
+	</head>
+	<body>
+<!-- Heading -->
+		<h1>Julie B's</h1>
+	
+<!-- Navigation -->
+		<hr />
+		<a href="restaurantIndex.html">Home</a>
+		<a href="restaurantMenu.html">Menu</a>
+		<a href="restaurantContactUs.html">Contact Us</a>
+		<hr />
+	
+<!-- Form -->	
+		<form>
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" required /></td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td><input type="text" required /></td>
+				</tr>
+				<tr>
+					<td>Phone: </td>
+					<td><input type="text" required /></td>
+				</tr>
+				<tr>
+					<td>Reason for Inquiry: </td>
+					<td>
+						<select name="reason">
+							<option value="catering" selected>Catering</option>
+							<option value="party">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select>
+					<td>
+				</tr>
+				<tr>
+					<td>Additional Information:</td>
+					<td> <textarea name="additionalInfo"></textarea></td>
+				</tr>
+				<tr>
+					<td>Have you been tot he restaurant?</td>
+					<td> 
+						<input type="radio" name="haveBeen" value="No" checked/>No
+						<input type="radio" name="haveBeen" value="Yes"/>Yes</td>
+				</tr>
+				<tr>
+					<td>Best days to contact you: </td>
+					<td>
+						<input type="checkbox" name="days" value="m"/>M
+						<input type="checkbox" name="days" value="tu" />Tu
+						<input type="checkbox" name="days" value="w" />W
+						<input type="checkbox" name="days" value="th" />Th
+						<input type="checkbox" name="days" value="f" />F
+					<td>
+				</tr>
+			</table>
+			<br/>
+			<input type="submit" class="submit1" value="Send Request"/>
+		</form>
+		
+<!-- Footer -->
+		<footer>
+			<hr/>
+			100 Main St, Wausau, WI 54401
+			<br/>
+			715-555-1212
+		</footer>
+	</body>
+</html>
