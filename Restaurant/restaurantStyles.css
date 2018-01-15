@@ -1,4 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.gstatic.com/s/permanentmarker);
+
 a:visited {
 	color:#84B5C2; /* Powder Blue by jacquelynfisher - colourlovers.com */
 }
@@ -15,7 +18,8 @@ body {
 	text-align: center;
 }
 #heading {
-	font-family: 'Oswald', sans-serif !important;
+	font-family: 'Permanent Marker', sans-serif !important;
+	color:#335577; /* Issue #9 by Hailey2005 - colourlovers.com */
 }
 footer {
 	font-style: italic;
