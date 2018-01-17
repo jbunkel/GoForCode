@@ -16,9 +16,10 @@
 <!-- Style -->
 		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<style>
-		th {
+		.myMenuItem {
 			text-align: center;
 			font-size: 150%;
+			font-weight: bold;
 		}
 		table {
 			margin: auto;
@@ -34,101 +35,98 @@
 		<h1>Julie B's</h1>
 	   </div>
 	
-<!-- Navigation -->
-		<hr />
-		<a href="restaurantIndex.html">Home</a>&nbsp;&nbsp;&nbsp;
-		<a href="restaurantMenu.html">Menu</a>&nbsp;&nbsp;&nbsp;
-		<a href="restaurantContactUs.html">Contact Us</a>
-		<hr />
+<!-- Navigation -->		
+	<div class="navbar navbar-default navbar-static-top"> <!-- navigation doesn't use the grid -->
+	  <div class="container"> <!-- keeps the text centered while the navbar above lets color flow through the whole page -->
+		<ul class='nav nav-pills'>
+			<li><a href="restaurantIndex.html"><i class='glyphicon glyphicon-home'></i></a></li>
+			<li><a href="restaurantMenu.html">Menu</a></li>
+			<li><a href="restaurantContactUs.html">Contact Us</a></li>
+		</ul>
+	  </div>
+	</div>
 	
 <!-- Content -->
 	   <div id="main">	
-		<table>
-			<tr>
-				<th>Burger and Fries</th>
-				<th>Hot Dog and Chips</th>
-				<th>Italian Sausage and Peppers</th>
-			</tr>
-			<tr>
-				<td>An American Classic!<br/>
-					Your choice - with or without cheese<br/>
-					Pickle, onion, tomoato, and lettuce<br/>
-					Served with our famous thick cut<br/>
-					french fries<br/>
-					$7.95<br/>
-				</td>
-				<td>A Summer Classic!<br/>
+		<div class='container'>
+			<div class='row text-center'>	
+				<div class='col-md-4'>
+					<span class='myMenuItem'>Burger and Fries</span><br/>
+					An American Classic!<br/>
+						Your choice - with or without cheese<br/>
+						Pickle, onion, tomoato, and lettuce<br/>
+						Served with our famous thick cut<br/>
+						french fries<br/>
+						$7.95<br/>
+				</div>
+				<div class='col-md-4'>
+					<span class='myMenuItem'>Hot Dog and Chips</span><br/>
+					A Summer Classic!<br/>
 					Your choice - white or wheat bun<br/>
 					Relish, mustard, and ketchup<br/>
 					Served with our house-made chips<br/>
 					$7.95<br/>
-				</td>
-				<td>An All-Time Favoriate!<br/>
+				</div>
+				<div class='col-md-4'>
+					<span class='myMenuItem'>Italian Sausage and Peppers</span><br/>
+					An All-Time Favoriate!<br/>
 					Your choice - mild or spicy<br/>
 					Cole Slaw<br/>
 					Served with garlic mashers<br/>
-					$10.95<br/>
-				</td>
-			</tr>
-			<tr height="20px">
-				<th></th>
-				<th></th>
-				<th></th>
-			</tr>
-			<tr>
-				<th>Tenderloin Sandwich and Chips</th>
-				<th>House Salad</th>
-				<th>Brisket Sandwich and Fries</th>
-			</tr>
-			<tr>
-				<td>Really Hits the Spot!<br/>
+					$10.95<br/><br/>
+				</div>
+			</div>
+			<div class='row text-center'>	
+				<div class='col-md-4'>
+					<span class='myMenuItem'>Tenderloin Sandwich and Chips</span><br/>
+					Really Hits the Spot!<br/>
 					Your choice - with or without cheese<br/>
 					Pickle, onion, tomoato, and lettuce<br/>
 					Served with our famous thick cut<br/>
 					french fries<br/>
 					$8.95<br/>
-				</td>
-				<td>On the Lighter Side<br/>
+				</div>
+				<div class='col-md-4'>
+					<span class='myMenuItem'>House Salad</span><br/>
+					On the Lighter Side<br/>
 					Your choice - with or without cheese<br/>
 					Pickle, onion, tomoato, and lettuce<br/>
 					Served with our famous thick cut<br/>
 					french fries<br/>
 					$6.95<br/>
-				</td>
-				<td>A Taste of Texas!<br/>
+				</div>
+				<div class='col-md-4'>
+					<span class='myMenuItem'>Brisket Sandwich and Fries</span><br/>
+					A Taste of Texas!<br/>
 					Your choice - with or without cheese<br/>
 					Pickle, onion, tomoato, and lettuce<br/>
 					Served with our famous thick cut<br/>
 					french fries<br/>
-					$7.95<br/>
-				</td>
-			</tr>
-			<tr height="20px">
-				<th></th>
-				<th></th>
-				<th></th>
-			</tr>
-			<tr align="left">
-				<th style="text-align: left;">Beverages</th>
-				<th></th>
-			</tr>
-			<tr align="left">
-				<td>Root Beer</td>
-				<td>$3.00</td>
-			</tr>
-			<tr align="left">
-				<td>Bottled Water</td>
-				<td>$1.25</td>
-			</tr>
-			<tr align="left">
-				<td>Lemonade</td>
-				<td>$1.00</td>
-			</tr>
-			<tr align="left">
-				<td>Iced Tea</td>
-				<td>$1.25</td>
-			</tr>
-		</table>
+					$7.95<br/><br/>
+				</div>
+			</div>	
+			
+			<div class='row' align="left">
+				<div class='col-md-2 myMenuItem' style="text-align: left;">Beverages</div>
+				
+			</div>
+			<div class='row' align="left">
+				<div class='col-md-2'>Root Beer</div>
+				<div class='col-md-10'>$3.00</div>
+			</div>
+			<div class='row' align="left">
+				<div class='col-md-2'>Bottled Water</div>
+				<div class='col-md-10'>$1.25</div>
+			</div>
+			<div class='row' align="left">
+				<div class='col-md-2'>Lemonade</div>
+				<div class='col-md-10'>$1.00</div>
+			</div>
+			<div class='row' align="left">
+				<div class='col-md-2'>Iced Tea</div>
+				<div class='col-md-10'>$1.25</div>
+			</div>
+		</div>
 	   </div>		
 		
 <!-- Footer -->
